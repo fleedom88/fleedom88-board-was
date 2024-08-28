@@ -34,12 +34,12 @@ public enum Sido {
         return name;
     }
 
-    public static Sido getByCode(String code) {
-        for (Sido sido : values()) {
-            if (sido.getCode().equals(code)) {
-                return sido;
-            }
-        }
-        return null;
-    }
+    // public static Sido getByCode(String code) {
+    //     for (Sido sido : values()) {
+    //         if (sido.getCode().equals(code)) {
+    //             return sido;
+    //         }
+    //     }
+    //     return null;
+    // }
 }
