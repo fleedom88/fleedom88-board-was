@@ -1,17 +1,20 @@
 package com.fleedom88.boardback.controller;
 
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.fleedom88.boardback.common.constraints.KoreaAdministrativeDivision;
 
+import lombok.RequiredArgsConstructor;
+
 @RestController
 @RequestMapping("/gym")
+@RequiredArgsConstructor
 public class Gymcontroller {
     
-    @PostMapping(value = "{districtCode}")
+    @GetMapping(value = "{districtCode}")
     public String getInfo(
         @PathVariable("districtCode") String districtCode
     ){
