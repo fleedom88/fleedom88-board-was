@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.fleedom88.boardback.common.constraints.KoreaAdministrativeDivision;
 import com.fleedom88.boardback.dto.request.user.PatchNicknameRequestDto;
 import com.fleedom88.boardback.dto.request.user.PatchProfileImageRequestDto;
 import com.fleedom88.boardback.dto.response.user.GetSignInUserResponseDto;
@@ -60,6 +61,5 @@ public class UserController {
         ResponseEntity<? super PatchProfileImageResponseDto> response = userService.patchProfileImage(requestBody, email);
         return response;
     }
-
     
 }

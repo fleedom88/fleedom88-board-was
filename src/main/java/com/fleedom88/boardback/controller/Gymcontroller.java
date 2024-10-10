@@ -14,7 +14,7 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class Gymcontroller {
     
-    @GetMapping(value = "{districtCode}")
+    @GetMapping(value = "/{districtCode}")
     public String getInfo(
         @PathVariable("districtCode") String districtCode
     ){
